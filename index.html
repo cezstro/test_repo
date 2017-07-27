@@ -1,9 +1,47 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>test profile</title>
+    <title></title>
+    <style>
+        header {border-bottom:2px solid #ccc;width: 100%; height: 90px; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 999; background-color: #fff;}
+        header h1#logo {line-height:60px;display: inline-block; height: 90px; float: left; font-family: Arial, sans-serif; font-size: 40px; font-weight: 400;}
+        header nav { display: inline-block; float: right; }
+        header nav a { line-height: 150px; margin-left: 20px; color: #333; font-weight: 700; font-size: 18px; text-decoration:none;}
+        header nav a:hover { color: white; }
+        header.smaller { height: 75px; }
+        header.smaller h1#logo { width: 150px; height: 75px; line-height: 75px; font-size: 30px; }
+        header.smaller nav a { line-height: 75px; }
+        header .container{width:700px;margin:0 auto}
+
+        section {background-image: url("hw_bg.jpg"); padding:20px;margin-top:90px; }
+        section .content{width:650px;height:480px;border:1px solid #ccc;background:white;margin-left:125px;}
+    </style>
 </head>
 <body>
-<hi>hello world</hi>
+    <div class="wrapper">
+        <header>
+            <div class="container clearfix">
+                <h1 id="logo">
+                    LOGO
+                </h1>
+                <nav>
+                    <a href="">Lorem</a>
+                    <a href="">Ipsum</a>
+                    <a href="">Dolor</a>
+                </nav>
+            </div>
+        </header><!-- /header -->
+
+        <section>
+            <div class="container">
+                <div class="content">
+
+                </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
 </body>
 </html>
