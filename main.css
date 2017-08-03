@@ -1,25 +1,79 @@
+/* 
+	- Date:     8/1/2017
+	- Author:   R. Hardy   
+----------------------------
+   CSS DIRECTORY
+	1. =GENERAL
+	2. =HEADER
+	3. =NAV
+	4. =SECTION, ARTICLE, ASIDE
+	5. =FOOTER
+    6. =MEDIA QUERIES
+*/
 
-
-
+/* === GENERAL === */
 body{margin:0;padding:0}
 hr {margin: 20px 0;color:#ccc}
-header {background:white;height:90px;border-bottom:#ccc 2px solid;}
-header .container {width:980px;height: 90px;margin:0 auto}
-header .container .logo{width:250px;height:90px;float:left;background:#669999}
-header .container .logo h1{font-size: 32px;color:white;text-align:center}
 
+/* === HEADER === */
+header {background:white;height:90px;border-bottom:#ccc 2px solid;}
+header .container {height: 90px;margin:0 auto}
+header .container .logo{width:250px;height:90px;float:left;background:#669999}
+header .container .logo h1{font-size: 32px;color:white;text-align:center;line-height: 76px}
+
+/* === NAV === */
 nav {width:300px;float: right;margin-top:30px}
 nav ul{list-style-type: none;padding: 0;margin: 0;}
 nav ul li{display: inline;color:#ccc;font-size: 17px}
 nav ul li a{color:#ccc;text-decoration: none}
 nav ul li:not(:first-child):before {content: " | ";padding: 0 10px}
+
+/* === SECTION, ARTICLE, ASIDE  === */
 section{overflow:auto;padding:30px 40px;background-image:url("assets/img/pattern.jpg");background-repeat:repeat;}
-section .container{width:980px;background:#fff;margin:0 auto;}
-section article{border:1px solid #ccc;background: white;padding:20px;width:610px;height:400px;float:left;margin-right:40px}
+section .container{background:#e1e1e1;margin:0 auto;}
+section article{border:1px solid #ccc;background: white;padding:20px;width:610px;float:left;margin-right:40px}
 section article p {font-family:Arial;font-size: 28px;color:#999;line-height: 38px;}
 section article h2 {font-size: 28px;color:#669999;}
 section article img {float: left;margin:15px}
 section aside{border:1px solid #ccc;background: white;padding:20px;width:230px;height:206;float:left}
 section aside h2 {font-size: 28px;color:#669999;}
+section aside ul {padding:0;margin:0;list-style-type: none;}
+section aside ul li {display: inline-block;margin-left:5px;width:62px;height:62px}
+section aside ul li:nth-child(0){color:lightskyblue;}
+section aside ul li:nth-child(1){color:green;}
+section aside ul li:nth-child(2){color:orange;}
 
-footer {padding-top:20px;font-size:11px;height:90px;color:white;border-top:10px solid #669999;clear: both;background: #333;text-align: center}
+/* === FOOTER === */
+footer {width:100%;position:fixed;left:0;bottom:0;padding-top:20px;font-size:11px;height:90px;color:white;border-top:10px solid #669999;clear: both;background: #333;text-align: center}
+
+/* === MEDIA QUERIES === */
+
+/* Extra small devices (phones, less than 480px) */
+@media only screen and (min-width : 480px) { 
+    header .container .logo{background:black}
+    section article{width:95%;margin-bottom:30px;}
+    section aside {width:95%}
+    section article img{width:80%;height:200px;margin:0 10px}
+    /* section .container article {width:95%;margin-bottom:30px;margin-right:0} */
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) { 
+    header .container .logo{background:skyblue}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width : 992px) { 
+    header .container .logo{background:orangered}
+    section .container,header .container{width:100%}
+    section article{width:60%;float:left;margin-right:40px;}
+    section article img{width:80%;height:200px;margin:0 10px}
+    section aside {width:25%}
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width : 1200px) { 
+    header .container .logo{background:#669999}
+    section .container{width:980px}
+    header .container{width:65%;}
+ }
