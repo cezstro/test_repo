@@ -1,0 +1,25 @@
+
+
+
+body{margin:0;padding:0}
+hr {margin: 20px 0;color:#ccc}
+header {background:white;height:90px;border-bottom:#ccc 2px solid;}
+header .container {width:980px;height: 90px;margin:0 auto}
+header .container .logo{width:250px;height:90px;float:left;background:#669999}
+header .container .logo h1{font-size: 32px;color:white;text-align:center}
+
+nav {width:300px;float: right;margin-top:30px}
+nav ul{list-style-type: none;padding: 0;margin: 0;}
+nav ul li{display: inline;color:#ccc;font-size: 17px}
+nav ul li a{color:#ccc;text-decoration: none}
+nav ul li:not(:first-child):before {content: " | ";padding: 0 10px}
+section{overflow:auto;padding:30px 40px;background-image:url("assets/img/pattern.jpg");background-repeat:repeat;}
+section .container{width:980px;background:#fff;margin:0 auto;}
+section article{border:1px solid #ccc;background: white;padding:20px;width:610px;height:400px;float:left;margin-right:40px}
+section article p {font-family:Arial;font-size: 28px;color:#999;line-height: 38px;}
+section article h2 {font-size: 28px;color:#669999;}
+section article img {float: left;margin:15px}
+section aside{border:1px solid #ccc;background: white;padding:20px;width:230px;height:206;float:left}
+section aside h2 {font-size: 28px;color:#669999;}
+
+footer {padding-top:20px;font-size:11px;height:90px;color:white;border-top:10px solid #669999;clear: both;background: #333;text-align: center}
